@@ -1,0 +1,191 @@
+.selectoptionContainer h5 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.selectoptionContainer .selectOptionColor .selectImgContainer {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.selectoptionContainer .selectOptionColor .selectImgContainer .selectImg {
+  border: 2px solid #dcdcdc;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  padding: 1px;
+  overflow: hidden;
+  transition: 200ms linear;
+}
+
+.selectoptionContainer
+  .selectOptionColor
+  .selectImgContainer
+  .selectImg.active {
+  border: 2px solid #000;
+}
+
+.selectoptionContainer .selectOptionColor .selectImgContainer .selectImg:hover {
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.selectoptionContainer .selectOptionColor .selectImgContainer .selectImg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Size */
+.selectoptionContainer .selectOptionSize {
+  margin-top: 2.5rem;
+}
+.selectoptionContainer .selectOptionSize .itemSize {
+  display: flex;
+  gap: 1rem;
+  margin-top: 12px;
+}
+.selectoptionContainer .selectOptionSize .itemSize .size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  height: 35px;
+  width: 35px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  transition: 300ms ease;
+  text-transform: uppercase;
+}
+
+.selectoptionContainer .selectOptionSize .itemSize .size.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.selectoptionContainer .selectOptionSize .itemSize .size:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Price */
+
+.selectoptionContainer .selectOptionPrice {
+  margin-top: 2.5rem;
+}
+.selectoptionContainer .selectOptionPrice h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.selectoptionContainer .selectOptionPrice h4 .oldmrp {
+  margin-left: 8px;
+  position: relative;
+  font-size: 0.9rem;
+}
+.selectoptionContainer .selectOptionPrice h4 .oldmrp::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transform: rotate(-20deg);
+}
+.selectoptionContainer .selectOptionPrice h4 .newmrp {
+  font-size: 1.2rem;
+  margin-left: 8px;
+  color: red;
+}
+
+/* Add cart */
+.selectoptionContainer .selectOptionAddBag .flexBtns {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 10px;
+}
+.selectoptionContainer .selectOptionAddBag .quantitybtns {
+  display: flex;
+}
+
+.selectoptionContainer .selectOptionAddBag .quantitybtns button {
+  height: 45px;
+  width: 22px;
+  border: none;
+  font-size: 1.2rem;
+  color: grey;
+  font-weight: 600;
+  border: 1px solid rgb(196, 196, 196);
+}
+.selectoptionContainer .selectOptionAddBag .quantitybtns button:hover {
+  color: #373737;
+}
+
+.selectoptionContainer .selectOptionAddBag .qtys {
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: white;
+  border-top: 1px solid rgb(196, 196, 196);
+  border-bottom: 1px solid rgb(196, 196, 196);
+  height: 45px;
+  width: 40px;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+.selectoptionContainer .selectOptionAddBag .qtys:focus {
+  outline: none;
+}
+
+.selectoptionContainer .selectOptionAddBag .flexBtns .addCart {
+  width: 100%;
+}
+
+.selectoptionContainer .selectOptionAddBag .flexBtns .addCart .cartBtn {
+  height: 45px;
+  width: 100%;
+  border: none;
+  background-color: #dcdcdc;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: 1px solid #dcdcdc;
+  transition: 400ms ease;
+}
+.selectoptionContainer .selectOptionAddBag .flexBtns .addCart .cartBtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.selectoptionContainer .selectOptionAddBag .flexBtns .addCart .cartBtn i {
+  transform: translateX(0px);
+  transition: transform 400ms;
+}
+
+.selectoptionContainer .selectOptionAddBag .flexBtns .addCart .cartBtn:hover i {
+  transform: translateX(10px);
+  display: inline-block;
+}
+
+.selectoptionContainer .selectOptionAddBag .buyBtncontainer {
+  width: 100%;
+  margin-top: 1rem;
+  height: 45px;
+}
+
+.selectoptionContainer .selectOptionAddBag .buyBtncontainer .buyBtn {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 0.87rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: 300ms ease;
+}
+.selectoptionContainer .selectOptionAddBag .buyBtncontainer .buyBtn:hover {
+  opacity: 0.8;
+}

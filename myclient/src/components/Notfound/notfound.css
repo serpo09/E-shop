@@ -1,0 +1,6 @@
+.notfoundpage {
+    background: url(../../images/notfound.png) center center;
+    background-color: red;
+    background-size: cover;
+    height: 100%;
+}

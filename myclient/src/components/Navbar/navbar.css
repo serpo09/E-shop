@@ -1,0 +1,179 @@
+/* .show {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #fff;
+  padding-block: 10px;
+  height: 50px;
+} */
+
+.logo {
+  font-weight: 700;
+}
+.logoimg {
+  height: 70px;
+  width: 120px;
+  object-fit: cover;
+}
+.reloadlogo {
+  height: 50px;
+}
+/* topNavbarContainer */
+.topNavbarContainer {
+  padding-inline: 8rem !important;
+  background-color: aliceblue;
+  padding-block: 10px;
+}
+
+.topNavbarContainer .phone {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.topNavbarContainer .phoneNo {
+  margin-left: 8px;
+}
+.topheaderFaq {
+  display: flex;
+  gap: 1.5rem;
+}
+.topheaderFaq .faqList ul {
+  display: flex;
+  gap: 1.2rem;
+}
+.topheaderFaq .socialHeader i {
+  margin-left: 12px;
+  font-size: 1.1rem;
+  color: rgb(66, 66, 66);
+  color: #003060;
+}
+
+.topNavbarflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar */
+.navbarPadding {
+  padding-inline: 7rem !important;
+}
+.rightContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Right side of navbar */
+.rightContainer .addCart {
+  position: relative;
+}
+.rightContainer .addCart .shoppingNo {
+  position: absolute;
+  top: -4px;
+  right: -7px;
+  background-color: red;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #fff;
+}
+
+.rightContainer .user {
+  cursor: pointer;
+}
+
+.rightContainer .user {
+  position: relative;
+}
+.rightContainer .user .userDropdown .userdropdownName {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.rightContainer .user .userDropdown {
+  position: absolute;
+  top: 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-block: 20px;
+  left: -30px;
+  width: 160px;
+  display: none;
+  margin-top: 1.3rem;
+  background-color: #fff;
+  z-index: 10;
+}
+
+/* Show dropdown on hover */
+.rightContainer .user:hover .userDropdown {
+  display: block;
+}
+
+.rightContainer .user .userDropdown .userdropdownItem {
+  margin-block: 0.3rem;
+  transition: 200ms linear;
+}
+.rightContainer .user .userDropdown .userdropdownItem:hover {
+  background-color: rgb(229, 224, 224);
+}
+
+.rightContainer .user .userDropdown .userdropdownItem .dropdownitemFlex {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+  /* topNavbarContainer */
+  .topNavbarContainer {
+    padding-inline: 1rem !important;
+  }
+
+  /* Navbar */
+  .navbarPadding {
+    padding-inline: 0rem !important;
+  }
+}
+@media screen and (max-width: 786px) {
+  .topNavbarContainer .phone {
+    display: block;
+  }
+  /* .topNavbarContainer .topheaderFaq {
+      display: block;
+    } */
+  .topheaderFaq .socialHeader {
+    display: none;
+  }
+  .topNavbarContainer {
+   display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* .topNavbarflex {
+    display: block;
+    text-align: center;
+  }
+
+  .topNavbarContainer .topheaderFaq {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  } */
+
+  .logoimg {
+    height: 35px;
+    width: 80px;
+    object-fit: cover;
+}
+}

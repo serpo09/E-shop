@@ -1,0 +1,7 @@
+.footerContainer {
+    background: url(../../images/footerbg.webp);
+}
+.footerContainer .footerimg img {
+    width: 80%;
+    height: auto;
+}

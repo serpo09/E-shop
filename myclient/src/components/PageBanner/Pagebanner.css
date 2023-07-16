@@ -1,0 +1,14 @@
+.bannerBg {
+    background:linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7)) , url(../../images/pagebanner.jpg);
+    background-position: center center;
+    height: 340px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.bannerBg h3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
